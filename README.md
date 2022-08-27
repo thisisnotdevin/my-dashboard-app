@@ -1,3 +1,1 @@
 # Health-dashboard
-
-Creating a dashboard [unfinished]
