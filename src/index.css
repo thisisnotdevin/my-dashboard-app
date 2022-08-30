@@ -4,14 +4,17 @@
     --color-primary: #7380ec;
     --color-danger: #ff7782;
     --color-success: #41f1b6;
-    --color-white: #fff;
+    --color-white: #202528;
+    
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;
-    --color-dark: #363949;
-    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark: #edeffd;
+    --color-light: rgba(0, 0, 0, 0.4);
+    
     --color-primary-variant: #111e88;
-    --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
+    --color-dark-variant: #a3bdcc;
+    
+    --color-background: #181a1e;
 
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
@@ -20,18 +23,19 @@
 
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
-
     --box-shadow: 0 2rem 3rem var(--color-light);
+    
 }
 
-/* ---------------- dark theme css ---------------- */
-.dark-theme-page {
-  --color-background: #181a1e;
-  --color-white: #202528;
-  --color-dark: #edeffd;
-  --color-dark-variant: #a3bdcc;
-  --color-light: rgba(0, 0, 0, 0.4);
+/* ---------------- light theme css ---------------- */
+.light-theme-page {
+  --color-background:#f6f6f9;
+  --color-white: #fff;
+  --color-dark: #363949;
+  --color-dark-variant: #677483;
+  --color-light: rgba(132, 139, 200, 0.18);
   --box-shadow: 0 2rem 3rem var(--color-light);
+  
 }
 
 
@@ -256,36 +260,39 @@ main .date input[type='date']{
 }
 
 main .insights{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
+    gap: 16px;
 }
 
 main .insights > div {
+    
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    margin-top: 1rem;
+    margin-top: 10px;
     box-shadow: var(--box-shadow);
     transition: all 400ms ease;
 }
 main .insights > div:hover {
+    
     box-shadow: none;
 }
 
 main .insights > div span{
+    
     background: coral;
-    padding: 0.5rem;
+    padding: 8px;
     border-radius: 50%;
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 25px;
 }
 
-main .insights > div.expenses span{
+main .insights > div.steps span{
     background: var(--color-danger);
 }
 
-main .insights > div.income span{
+main .insights > div.calories span{
     background: var(--color-success);
 }
 
@@ -296,11 +303,13 @@ main .insights > div .middle {
 }
 
 main .insights h3 {
+    
     margin: 1rem 0 0.6rem;
     font-size: 1rem;
 }
 
 main .insights .progress {
+    
     position: relative;
     width: 92px;
     height: 92px;
@@ -308,6 +317,7 @@ main .insights .progress {
 }
 
 main .insights svg {
+    
    width: 7rem;
    height: 7rem;
 }
@@ -322,19 +332,21 @@ main .insights svg circle {
     stroke-dashoffset: 92;
 }
 
-main .insights .sales svg circle{
-    stroke-dashoffset: -30;
+main .insights .spendings svg circle{
+    
+    stroke-dashoffset: -40;
     stroke-dasharray: 200;
 }
 
-main .insights .expenses svg circle{
-    stroke-dashoffset: 20;
-    stroke-dasharray: 80;
+main .insights .steps svg circle{
+    /* stroke-dashoffset: 50; */
+    stroke-dasharray: 1;
 }
 
-main .insights .income svg circle{
-    stroke-dashoffset: 35;
-    stroke-dasharray: 110;
+main .insights .calories svg circle{
+    /*stroke-dashoffset: 35;
+    stroke-dasharray: 110;*/
+    stroke-dasharray: 1;
 }
 
 main .insights .progress .number {
@@ -349,19 +361,20 @@ main .insights .progress .number {
 }
 
 main .insights small{
+    
     margin-top: 1.3rem;
     display: block;
 }
 
-main .recent-orders{
+main .recent-spendings{
     margin-top: 2rem;
 }
 
-main .recent-orders h2{
+main .recent-spendings h2{
     margin-bottom: 0.8rem;
 }
 
-main .recent-orders table{
+main .recent-spendings table{
     background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
@@ -371,7 +384,7 @@ main .recent-orders table{
     transition: all 400ms ease;
 }
 
-main .recent-orders table:hover{
+main .recent-spendings table:hover{
     box-shadow: none;
 }
 
@@ -384,7 +397,11 @@ main table tbody tr:last-child td {
     border: none;
 }
 
-main .recent-orders a {
+main .recent-spendings .transaction-name {
+    font-weight: 500;
+}
+
+main .recent-spendings a {
     text-align: center;
     display: block;
     margin: 1rem auto;
