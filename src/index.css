@@ -16,14 +16,11 @@
     
     --color-background: #181a1e;
 
-    --card-border-radius: 2rem;
-    --border-radius-1: 0.4rem;
-    --border-radius-2: 0.8rem;
-    --border-radius-3: 1.2rem;
+    --card-border-radius: 0.8rem;
 
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0 1rem 3rem var(--color-light);
     
 }
 
@@ -249,7 +246,8 @@ leftside .sidebar .message-count {
     color: var(--color-white);
     padding: 2px 10px;
     font-size: 11px;
-    border-radius: var(--border-radius-1);
+    border-radius: var(--card-border-radius);
+    
 }
 
 main {
@@ -259,7 +257,8 @@ main {
 main .date{
     display: inline-block;
     background: var(--color-light);
-    border-radius: var(--border-radius-1);
+    border-radius: var(--card-border-radius);
+    
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
 
@@ -282,6 +281,9 @@ main .insights > div {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
+    border: solid;
+    border-width: 2px;
+    border-color: var(--color-info-dark);
     margin-top: 10px;
     box-shadow: var(--box-shadow);
     transition: all 400ms ease;
@@ -296,6 +298,7 @@ main .insights > div span{
     background: coral;
     padding: 8px;
     border-radius: 50%;
+    
     color: var(--color-white);
     font-size: 25px;
 }
@@ -390,6 +393,9 @@ main .recent-spendings table{
     background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
+    border: solid;
+    border-width: 2px;
+    border-color: var(--color-info-dark);
     padding: var(--card-padding);
     text-align: center;
     box-shadow: var(--box-shadow);
@@ -442,7 +448,8 @@ main .recent-spendings a {
     height: 1.6rem;
     width: 4.2rem;
     cursor: pointer;
-    border-radius: var(--border-radius-1);
+    border-radius: var(--card-border-radius);
+    
 }
 
 .right .theme-toggler span {
@@ -457,7 +464,8 @@ main .recent-spendings a {
 .right .theme-toggler span.active {
     background-color: var(--color-primary);
     color: white;
-    border-radius: var(--border-radius-1);
+    border-radius: var(--card-border-radius);
+    
 }
 
 .right .top .profile{
@@ -478,6 +486,9 @@ main .recent-spendings a {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
+    border: solid;
+    border-width: 2px;
+    border-color: var(--color-info-dark);
     box-shadow: var(--box-shadow);
     transition: all 400ms ease;
 }
@@ -508,7 +519,10 @@ main .recent-spendings a {
     gap: 1rem;
     margin-bottom: 0.7rem;
     padding: 1.4rem var(--card-padding);
-    border-radius: var(--border-radius-3);
+    border-radius: var(--card-border-radius);
+    border: solid;
+    border-width: 2px;
+    border-color: var(--color-info-dark);
     box-shadow: var(--box-shadow);
     transition: all 400ms ease;
 }
