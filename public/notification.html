@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="notification.css" >
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
             </div>
 
             <div class="sidebar">
-                <a href="index.html" class="tab active" data-for-tab="1">
+                <a href="index.html" class="tab" data-for-tab="1">
                     <button class="material-icons-sharp">space_dashboard</button>
                     <h3>Dashboard</h3>
                 </a>
@@ -38,7 +38,7 @@
                     <button class="material-icons-sharp">insights</button>
                     <h3>Analytics</h3>
                 </a>
-                <a href="notification.html" class="tab" data-for-tab="4">
+                <a href="notification.html" class="tab active" data-for-tab="4">
                     <button class="material-icons-sharp">mail_outline</button>
                     <h3>Notifications</h3>
                     <span class="message-count">26</span>
@@ -61,115 +61,22 @@
         </leftside>
         <!------------------ END OF LEFTSIDE -------------------->
         <main>
-            <h1>Dashboard</h1>
-            <div class="date">
-                <input type="date" >
-            </div>
-            <div class="insights">
-                <div class="spendings">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Spendings</h3>
-                            <h1>$4,024 / $5000</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Last Month</small>
-                </div>
-                <!-----end of sales-->
-                <div class="steps">
-                    <span class="material-icons-sharp">bar_chart</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Steps</h3>
-                            <h1>10,160</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>100%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 24 Hours</small>
-                </div>
-                <!-----end of expenses-->
-                <div class="calories">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total calories</h3>
-                            <h1>2,543</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>100%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 24 Hours</small>
-                </div>
-                <!-----end of sales-->
-            </div>
+            <h1>Notifications</h1>
+            
             <div class="recent-spendings">
-                <h2>Recent Spendings</h2>
+                <h2>Messages</h2>
                 <table>
-                    <thead> 
-                        <tr>
-                            <th>Transaction</th>
-                            <th>Amount</th>
-                            <th>Time</th>
-                            <th>Category</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="transaction-name">Inaka Power</td>
-                            <td>$53.50</td>
-                            <td>2 hours ago</td>
-                            <td class="warning">Shopping</td>
-                            <td class="primary">Details</td>
-                        </tr><tr>
-                            <td class="transaction-name">Deli and Grill</td>
-                            <td>$8.32</td>
-                            <td>7 hours ago</td>
-                            <td class="warning">Food</td>
-                            <td class="primary">Details</td>
-                        </tr><tr>
-                            <td class="transaction-name">Chipotle Mexican Grill</td>
-                            <td>$13.66</td>
-                            <td>Friday</td>
-                            <td class="warning">Food</td>
-                            <td class="primary">Details</td>
-                        </tr><tr>
-                            <td class="transaction-name">ikea.com</td>
-                            <td>$238.44</td>
-                            <td>Thursday</td>
-                            <td class="warning">Shopping</td>
-                            <td class="primary">Details</td>
-                        </tr><tr>
-                            <td class="transaction-name">Apple</td>
-                            <td>$7.99</td>
-                            <td>8/18/22</td>
-                            <td class="warning">Entertainment</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                    </tbody>
+                    <div class="contacts">
+                        <div class="contact">
+                            
+                        </div>
+                    </div>
+                    <div class="messages">
+
+                    </div>
+                  
                 </table>
-                <a href="#">Show All</a>
+              
             </div>
         </main>
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Responsive Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="analytics.css" >
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <leftside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h2>ALL <span class="danger">DASH</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" class="tab" data-for-tab="1">
+                    <button class="material-icons-sharp">space_dashboard</button>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="personal-info.html" class="tab" data-for-tab="2">
+                    <button class="material-icons-sharp">person_outline</button>
+                    <h3>Personal Info</h3>
+                </a>
+                <a href="analytics.html" class="tab active" data-for-tab="3">
+                    <button class="material-icons-sharp">insights</button>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="notification.html" class="tab" data-for-tab="4">
+                    <button class="material-icons-sharp">mail_outline</button>
+                    <h3>Notifications</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#" class="tab" data-for-tab="5">
+                    <button class="material-icons-sharp">report_gmailerrorred</button>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#" class="tab" data-for-tab="6">
+                    <button class="material-icons-sharp">settings</button>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+
+        </leftside>
+        <!------------------ END OF LEFTSIDE -------------------->
+     
+
+        
+    </div>
+
+
+</body>
+</html>
