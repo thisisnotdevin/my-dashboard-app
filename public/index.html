@@ -63,10 +63,35 @@
         <main>
             <h1>Dashboard</h1>
             <div class="date">
-                <input type="date" >
+                <input id="today" type="date" >
             </div>
             <div class="insights">
+                
                 <div class="spendings">
+                    <div>
+                        
+                    </div>
+                    <div class="modal" id="modal">
+                        
+                        <div class="modal-header">
+                            <div class="title">Example Modal</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, 
+                            itaque exercitationem numquam ipsam doloribus odit dolore nemo 
+                            voluptatibus delectus necessitatibus nam perferendis sunt blanditiis? 
+                            Perferendis adipisci ipsum nihil commodi laborum necessitatibus explicabo
+                            obcaecati dolores doloremque dignissimos, quaerat eligendi, maiores sit
+                            deleniti dicta quasi laudantium id cumque. Itaque doloribus tempora
+                            possimus reiciendis eos neque, repellendus rem perspiciatis 
+                            reprehenderit laudantium incidunt rerum quibusdam illum vitae 
+                            corrupti dolores, vel dicta repellat sapiente. Tempore, itaque 
+                            nostrum eius et facere sed officia fugit quasi distinctio!
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+
                     <span class="material-icons-sharp">analytics</span>
                     <div class="middle">
                         <div class="left">
@@ -74,10 +99,8 @@
                             <h1>$4,024 / $5000</h1>
                         </div>
                         <div class="progress">
-                            
                             <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                                
+                                <circle cx='38' cy='38' r='36'></circle> 
                             </svg>
                             <div class="number">
                                 <p>81%</p>
@@ -85,6 +108,7 @@
                         </div>
                     </div>
                     <small class="text-muted">Last Month</small>
+                    <button data-modal-target="#modal">Show more</button>
                 </div>
                 <!-----end of sales-->
                 <div class="steps">
