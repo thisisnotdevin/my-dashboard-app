@@ -347,10 +347,8 @@ main .insights > div .middle {
 }
 .modal-header .close-button{
     cursor: pointer;
-    border: none;
-    outline: none;
     background: none;
-    font-size: 1.25rem;
+    font-size: 3.25rem;
     font-weight: bold;
 }
 .modal-body {
